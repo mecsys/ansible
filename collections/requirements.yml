@@ -6,6 +6,3 @@ collections:
   - 'ansible.posix'
   - 'community.mysql'
   - 'community.crypto'
-
-roles:
-  - src: 'geerlingguy.elasticsearch'
