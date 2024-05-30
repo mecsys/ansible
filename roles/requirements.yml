@@ -1,4 +1,4 @@
 ---
 
 roles:
-  - src: 'namespace.role'
+  - src: 'geerlingguy.elasticsearch'
