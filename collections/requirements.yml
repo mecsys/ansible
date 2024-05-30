@@ -1,7 +1,6 @@
 ---
 
-collections:
-  - 'namespace.collection'
+collections:  
   # for common collections:
   - 'community.general'
   - 'ansible.posix'
