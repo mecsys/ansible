@@ -10,3 +10,7 @@
    - name: Print message
      ansible.builtin.debug:
       msg: Hello world
+
+   - name: Nmap inventory
+     community.general.nmap:
+      address: gw.mecsys.com.br
