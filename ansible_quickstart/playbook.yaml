@@ -4,6 +4,10 @@
   hosts: localhost
   connection: local
   gather_facts: true
+
+  collections:
+    - community.general.dig
+
   tasks:
 
    - name: Ping my hosts
