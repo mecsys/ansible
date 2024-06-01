@@ -2,6 +2,8 @@
 
 - name: My first play
   hosts: localhost
+  connection: local
+  gather_facts: true
   tasks:
 
    - name: Ping my hosts
