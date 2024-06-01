@@ -1,6 +1,6 @@
 ---
 
-- name: [MecSys Semaphore] Install Python Modules & Ansible Collections/Roles
+- name: Semaphore Config - Install Python Modules & Ansible Collections/Roles
   hosts: localhost
   connection: local
   gather_facts: true
