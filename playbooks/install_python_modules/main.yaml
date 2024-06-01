@@ -1,6 +1,6 @@
 ---
 
-- name: Install Python Modules for Semaphore
+- name: [MecSys Semaphore] Install Python Modules & Ansible Collections/Roles
   hosts: localhost
   connection: local
   gather_facts: true
@@ -12,3 +12,8 @@
       requirements: '/home/semaphore/requirements.txt'
       extra_args: '--user --upgrade'
     become_user: 'semaphore'
+
+  - name: Install collections and roles together
+    community.general.ansible_galaxy_install:
+      type: both
+      requirements_file: '/home/semaphore/requirements.yml'
