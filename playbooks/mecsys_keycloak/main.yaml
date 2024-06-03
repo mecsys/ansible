@@ -10,9 +10,6 @@
 
   tasks:
 
-   - name: Ping my hosts
-     ansible.builtin.ping:
-
    - name: Create or update Keycloak realm mecsys
      community.general.keycloak_realm:
        auth_client_id: admin-cli
