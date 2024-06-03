@@ -1,0 +1,22 @@
+---
+
+- name: Manage MecSys Keycloak
+  hosts: localhost
+  connection: local
+  gather_facts: true
+
+  collections:
+    - community.general.dig
+
+  tasks:
+
+   - name: Ping my hosts
+     ansible.builtin.ping:
+
+   - name: Print message
+     ansible.builtin.debug:
+      msg: Hello world
+
+   - name: Simple A record (IPV4 address) lookup for gw.mecsys.com.br
+     ansible.builtin.debug:
+      msg: "{{ lookup('community.general.dig', 'gw.mecsys.com.br.')}}"
