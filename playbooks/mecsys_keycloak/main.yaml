@@ -20,4 +20,5 @@
        id: realm
        realm: mecsys
        state: present
+       display_name: "MecSys keycloak Realm."
    
