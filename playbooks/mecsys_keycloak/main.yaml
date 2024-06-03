@@ -15,7 +15,7 @@
        auth_client_id: admin-cli
        auth_keycloak_url: https://kc.mecsys.com.br/auth
        auth_realm: master
-       auth_username: USERNAME
+       auth_username: user
        auth_password: PASSWORD
        id: realm
        realm: mecsys
