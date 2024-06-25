@@ -29,4 +29,5 @@
         auth_username: "{{ user }}"
         auth_password: "{{ pass }}"
         client_id: mecsys_semaphore_test
+        realm: mecsys
         state: present
