@@ -10,15 +10,23 @@
 
   tasks:
 
-   - name: Create or update Keycloak realm mecsys
-     community.general.keycloak_realm:
-       auth_client_id: admin-cli
-       auth_keycloak_url: https://kc.mecsys.com.br
-       auth_realm: master
-       auth_username: "{{ user }}"
-       auth_password: "{{ pass }}"
-       id: mecsys
-       realm: mecsys
-       state: present
-       display_name: "MecSys keycloak Realm."
+    - name: Create or update Keycloak realm mecsys
+      community.general.keycloak_realm:
+        auth_client_id: admin-cli
+        auth_keycloak_url: https://kc.mecsys.com.br
+        auth_realm: master
+        auth_username: "{{ user }}"
+        auth_password: "{{ pass }}"
+        id: mecsys
+        realm: mecsys
+        state: present
+        display_name: "MecSys keycloak Realm."
    
+    - name: Create or update Keycloak client (minimal example), authentication with credentials
+      community.general.keycloak_client:
+        auth_keycloak_url: https://kc.mecsys.com.br
+        auth_realm: master
+        auth_username: "{{ user }}"
+        auth_password: "{{ pass }}"
+        client_id: mecsys_semaphore_test
+        state: present
